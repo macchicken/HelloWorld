@@ -103,6 +103,11 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fE9NEUh6EeW8e4UzijxFYg" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fE9NEkh6EeW8e4UzijxFYg" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_xG5WQEh_EeW8e4UzijxFYg" name="address" type="_3khvwEh5EeW8e4UzijxFYg" association="_xG5WQ0h_EeW8e4UzijxFYg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xG5WQUh_EeW8e4UzijxFYg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xG5WQkh_EeW8e4UzijxFYg" value="*"/>
+        </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_YUqywEh_EeW8e4UzijxFYg" name="pay"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_XfIWE0h4EeW8e4UzijxFYg" memberEnd="_XfIWFEh4EeW8e4UzijxFYg _XfIWEEh4EeW8e4UzijxFYg">
         <name xsi:nil="true"/>
@@ -153,7 +158,7 @@
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mP0twkh5EeW8e4UzijxFYg" value="*"/>
         </ownedEnd>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_3khvwEh5EeW8e4UzijxFYg" name="Adress">
+      <packagedElement xmi:type="uml:Class" xmi:id="_3khvwEh5EeW8e4UzijxFYg" name="Address">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9wHIQEh5EeW8e4UzijxFYg" name="street">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         </ownedAttribute>
@@ -163,8 +168,9 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_DZlSMEh6EeW8e4UzijxFYg" name="city">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_i3fRQEh_EeW8e4UzijxFYg" name="enterAddress"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_BphloEiBEeW8e4UzijxFYg" name="Address"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_OOK2IEh6EeW8e4UzijxFYg" client="_UgqZ0Eh4EeW8e4UzijxFYg" supplier="_3khvwEh5EeW8e4UzijxFYg"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_RYnY4Eh6EeW8e4UzijxFYg" name="BillingDetails">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_V9zbUEh6EeW8e4UzijxFYg" name="owner">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
@@ -175,6 +181,8 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZKq_8Eh6EeW8e4UzijxFYg" name="created">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
         </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_porRMEh_EeW8e4UzijxFYg" name="enterDetails"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_VVdKcEiREeWcwYdcWGKymQ" name="BillingDetails"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_fE9NE0h6EeW8e4UzijxFYg" memberEnd="_fE9NFEh6EeW8e4UzijxFYg _fE9NEEh6EeW8e4UzijxFYg">
         <name xsi:nil="true"/>
@@ -204,6 +212,13 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         </ownedAttribute>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xG5WQ0h_EeW8e4UzijxFYg" memberEnd="_xG5WREh_EeW8e4UzijxFYg _xG5WQEh_EeW8e4UzijxFYg">
+        <name xsi:nil="true"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xG5WREh_EeW8e4UzijxFYg" name="user" type="_UgqZ0Eh4EeW8e4UzijxFYg" association="_xG5WQ0h_EeW8e4UzijxFYg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xG5WRUh_EeW8e4UzijxFYg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xG5WRkh_EeW8e4UzijxFYg" value="1"/>
+        </ownedEnd>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_e6ZGYEh7EeW8e4UzijxFYg" name="Interaction-add comment">
       <lifeline xmi:type="uml:Lifeline" xmi:id="_qR6_UEh7EeW8e4UzijxFYg" name="Item Timeline" represents="_llL8sEh2EeW8e4UzijxFYg" coveredBy="_t_9h4kh8EeW8e4UzijxFYg _t_9h4Uh8EeW8e4UzijxFYg _1VdIwkh8EeW8e4UzijxFYg _YW1A0Uh9EeW8e4UzijxFYg"/>
@@ -223,7 +238,7 @@
       <message xmi:type="uml:Message" xmi:id="_1VdIwEh8EeW8e4UzijxFYg" name="comment()" receiveEvent="_1VdIwkh8EeW8e4UzijxFYg" sendEvent="_1VdIwUh8EeW8e4UzijxFYg" signature="_cr3j4Eh8EeW8e4UzijxFYg"/>
       <message xmi:type="uml:Message" xmi:id="_YW1A0Eh9EeW8e4UzijxFYg" name="createComment()" receiveEvent="_YW1A0kh9EeW8e4UzijxFYg" sendEvent="_YW1A0Uh9EeW8e4UzijxFYg" signature="_Qmoa8Eh9EeW8e4UzijxFYg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:StateMachine" xmi:id="_dT27gEh9EeW8e4UzijxFYg" name="StateMachine - add comment">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_dT27gEh9EeW8e4UzijxFYg" name="StateMachine-add comment">
       <region xmi:type="uml:Region" xmi:id="_g8-XQEh9EeW8e4UzijxFYg" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_6QUq0Eh9EeW8e4UzijxFYg" name="Create Comment" source="_l5KkcEh9EeW8e4UzijxFYg" target="_oAtfwEh9EeW8e4UzijxFYg"/>
         <transition xmi:type="uml:Transition" xmi:id="_KMPU8Eh-EeW8e4UzijxFYg" name="press create button" source="_oAtfwEh9EeW8e4UzijxFYg" target="_vmp9cEh9EeW8e4UzijxFYg"/>
@@ -239,6 +254,50 @@
         <subvertex xmi:type="uml:FinalState" xmi:id="_CNWy0Eh-EeW8e4UzijxFYg" name="FinalState()"/>
       </region>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_IGgiEEh_EeW8e4UzijxFYg" name="Interaction-payment">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_P21DwEh_EeW8e4UzijxFYg" name="User Timeline" represents="_mP0txEh5EeW8e4UzijxFYg" coveredBy="_HX1BsUiAEeW8e4UzijxFYg _LIfP4UiAEeW8e4UzijxFYg _sX17QUiBEeW8e4UzijxFYg _sX17QkiBEeW8e4UzijxFYg _sxysUkiBEeW8e4UzijxFYg _zwEGAUiBEeW8e4UzijxFYg _LRnEwUiCEeW8e4UzijxFYg _QjDJMUiCEeW8e4UzijxFYg _aUZJokiREeWcwYdcWGKymQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_7tQQ8Eh_EeW8e4UzijxFYg" name="Address Timeline" represents="_xG5WQEh_EeW8e4UzijxFYg" coveredBy="_IG1cwUiAEeW8e4UzijxFYg _LIfP4kiAEeW8e4UzijxFYg _wRr6oEiBEeW8e4UzijxFYg _zwEGAkiBEeW8e4UzijxFYg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_BY9PgEiAEeW8e4UzijxFYg" name="BillingDetails" represents="_fE9NEEh6EeW8e4UzijxFYg" coveredBy="_5xbA8kiAEeW8e4UzijxFYg _5xbA8UiAEeW8e4UzijxFYg _QjDJMkiCEeW8e4UzijxFYg _aUZJoUiREeWcwYdcWGKymQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_5xbA8kiAEeW8e4UzijxFYg" name="ActionExecSpec1Finish" covered="_BY9PgEiAEeW8e4UzijxFYg" execution="_5xbA8UiAEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LIfP4UiAEeW8e4UzijxFYg" name="enterAddress_MessageSend" covered="_P21DwEh_EeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aUZJokiREeWcwYdcWGKymQ" name="BillingDetails_MessageRecv" covered="_P21DwEh_EeW8e4UzijxFYg" message="_aUZJoEiREeWcwYdcWGKymQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sX17QUiBEeW8e4UzijxFYg" name="pay_MessageSend" covered="_P21DwEh_EeW8e4UzijxFYg" message="_sX17QEiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_HX1BsUiAEeW8e4UzijxFYg" name="ActionExecSpec" covered="_P21DwEh_EeW8e4UzijxFYg" finish="_aUZJokiREeWcwYdcWGKymQ" start="_sX17QkiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_sxysUkiBEeW8e4UzijxFYg" name="ActionExecSpec2" covered="_P21DwEh_EeW8e4UzijxFYg" finish="_zwEGAUiBEeW8e4UzijxFYg" start="_sX17QkiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sX17QkiBEeW8e4UzijxFYg" name="pay_MessageRecv" covered="_P21DwEh_EeW8e4UzijxFYg" message="_sX17QEiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_IG1cwUiAEeW8e4UzijxFYg" name="ActionExecSpec0" covered="_7tQQ8Eh_EeW8e4UzijxFYg" finish="_wRr6oEiBEeW8e4UzijxFYg" start="_LIfP4kiAEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zwEGAUiBEeW8e4UzijxFYg" name="enterAddress_MessageSend0" covered="_P21DwEh_EeW8e4UzijxFYg" message="_zwEGAEiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zwEGAkiBEeW8e4UzijxFYg" name="enterAddress_MessageRecv0" covered="_7tQQ8Eh_EeW8e4UzijxFYg" message="_zwEGAEiBEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LIfP4kiAEeW8e4UzijxFYg" name="enterAddress_MessageRecv" covered="_7tQQ8Eh_EeW8e4UzijxFYg" message="_LRnEwEiCEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LRnEwUiCEeW8e4UzijxFYg" name="Address_MessageRecv" covered="_P21DwEh_EeW8e4UzijxFYg" message="_LRnEwEiCEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wRr6oEiBEeW8e4UzijxFYg" name="ActionExecSpec0Finish" covered="_7tQQ8Eh_EeW8e4UzijxFYg" execution="_IG1cwUiAEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QjDJMUiCEeW8e4UzijxFYg" name="enterDetails_MessageSend" covered="_P21DwEh_EeW8e4UzijxFYg" message="_QjDJMEiCEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_5xbA8UiAEeW8e4UzijxFYg" name="ActionExecSpec1" covered="_BY9PgEiAEeW8e4UzijxFYg" finish="_5xbA8kiAEeW8e4UzijxFYg" start="_QjDJMkiCEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QjDJMkiCEeW8e4UzijxFYg" name="enterDetails_MessageRecv" covered="_BY9PgEiAEeW8e4UzijxFYg" message="_QjDJMEiCEeW8e4UzijxFYg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aUZJoUiREeWcwYdcWGKymQ" name="BillingDetails_MessageSend" covered="_BY9PgEiAEeW8e4UzijxFYg" message="_aUZJoEiREeWcwYdcWGKymQ"/>
+      <message xmi:type="uml:Message" xmi:id="_sX17QEiBEeW8e4UzijxFYg" name="pay()" receiveEvent="_sX17QkiBEeW8e4UzijxFYg" sendEvent="_sX17QUiBEeW8e4UzijxFYg" signature="_YUqywEh_EeW8e4UzijxFYg"/>
+      <message xmi:type="uml:Message" xmi:id="_zwEGAEiBEeW8e4UzijxFYg" name="enterAddress()" receiveEvent="_zwEGAkiBEeW8e4UzijxFYg" sendEvent="_zwEGAUiBEeW8e4UzijxFYg" signature="_i3fRQEh_EeW8e4UzijxFYg"/>
+      <message xmi:type="uml:Message" xmi:id="_LRnEwEiCEeW8e4UzijxFYg" name="address()" messageSort="reply" receiveEvent="_LRnEwUiCEeW8e4UzijxFYg" sendEvent="_LIfP4kiAEeW8e4UzijxFYg" signature="_BphloEiBEeW8e4UzijxFYg"/>
+      <message xmi:type="uml:Message" xmi:id="_QjDJMEiCEeW8e4UzijxFYg" name="enterDetails()" receiveEvent="_QjDJMkiCEeW8e4UzijxFYg" sendEvent="_QjDJMUiCEeW8e4UzijxFYg" signature="_porRMEh_EeW8e4UzijxFYg"/>
+      <message xmi:type="uml:Message" xmi:id="_aUZJoEiREeWcwYdcWGKymQ" name="billingDetails()" messageSort="reply" receiveEvent="_aUZJokiREeWcwYdcWGKymQ" sendEvent="_aUZJoUiREeWcwYdcWGKymQ" signature="_VVdKcEiREeWcwYdcWGKymQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_S7YRgEiNEeWcwYdcWGKymQ" name="StateMachine-payment">
+      <region xmi:type="uml:Region" xmi:id="_UAKIQEiNEeWcwYdcWGKymQ" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_fWPPsEiNEeWcwYdcWGKymQ" name="pay the bid" source="_UrDfYEiNEeWcwYdcWGKymQ" target="_bu7KwEiNEeWcwYdcWGKymQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_oaoBUEiNEeWcwYdcWGKymQ" name="enter billing address" source="_bu7KwEiNEeWcwYdcWGKymQ" target="_jlWUcEiNEeWcwYdcWGKymQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_yYexkEiNEeWcwYdcWGKymQ" name="enter billing details" source="_jlWUcEiNEeWcwYdcWGKymQ" target="_qbXKAEiNEeWcwYdcWGKymQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_A9TF4EiOEeWcwYdcWGKymQ" name="press pay button" source="_qbXKAEiNEeWcwYdcWGKymQ" target="_5lVZ0EiNEeWcwYdcWGKymQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_QH_HYEiOEeWcwYdcWGKymQ" name="press comfirm button" source="_5lVZ0EiNEeWcwYdcWGKymQ" target="_KJfIoEiOEeWcwYdcWGKymQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_SWtowEiOEeWcwYdcWGKymQ" name="payment success" source="_KJfIoEiOEeWcwYdcWGKymQ" target="_VbmykEiNEeWcwYdcWGKymQ"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_UrDfYEiNEeWcwYdcWGKymQ" name="Initial()"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_VbmykEiNEeWcwYdcWGKymQ" name="FinalState()"/>
+        <subvertex xmi:type="uml:State" xmi:id="_bu7KwEiNEeWcwYdcWGKymQ" name="payment window opened"/>
+        <subvertex xmi:type="uml:State" xmi:id="_jlWUcEiNEeWcwYdcWGKymQ" name="address detail entered"/>
+        <subvertex xmi:type="uml:State" xmi:id="_qbXKAEiNEeWcwYdcWGKymQ" name="billing details entered"/>
+        <subvertex xmi:type="uml:State" xmi:id="_5lVZ0EiNEeWcwYdcWGKymQ" name="pay buttons pressed"/>
+        <subvertex xmi:type="uml:State" xmi:id="_KJfIoEiOEeWcwYdcWGKymQ" name="payment window closed"/>
+      </region>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_r-07IEh9EeW8e4UzijxFYg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_r_RnEEh9EeW8e4UzijxFYg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_sYse0YZLEeKyw49uR6nx3g"/>
@@ -248,4 +307,5 @@
   </uml:Model>
   <ActionLanguage:TextualRepresentation xmi:id="_r_axAEh9EeW8e4UzijxFYg" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
   <ActionLanguage:TextualRepresentation xmi:id="_NuCnwUh-EeW8e4UzijxFYg" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_I1ULAEiOEeWcwYdcWGKymQ" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
 </xmi:XMI>
